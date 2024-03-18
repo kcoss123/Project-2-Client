@@ -1,11 +1,12 @@
 import React, { createContext, useContext, useState } from 'react';
 import axios from 'axios';
+import Backend_url from './Services/Backend_URL'
 
 const TicketContext = createContext();
 
 export const useTicketContext = () => useContext(TicketContext);
 
-const rootUrl = "http://localhost:4000";
+const rootUrl = Backend_url;
 const ticketUrl = `${rootUrl}/tickets`;
 
 const TicketProvider = ({ children }) => {
