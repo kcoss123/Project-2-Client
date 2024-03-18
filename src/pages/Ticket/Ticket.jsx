@@ -175,6 +175,18 @@ export const Ticket = () => {
           </form>
         ) : (
           <div>
+            <div className="form-group">
+              <label htmlFor="description">Description:</label>
+              <textarea
+                className="form-control"
+                id="description"
+                name="description"
+                readOnly={true}
+                value={selectedTicket.description || ""}
+                style={{ verticalAlign: 'top', minHeight: '100px' }} // Add this style
+              />
+            </div>
+            {/* Check if not editing and history exists */}
             {!isEditing && selectedTicket.history && (
               <MessageHistory messages={selectedTicket.history} />
             )}
