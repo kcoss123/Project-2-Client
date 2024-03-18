@@ -1,2 +1,3 @@
-/* export const Backend_url = 'http://localhost:4000'*/
-export const Backend_url = 'https://supporthelpdesk-server.adaptable.app'
+// Backend_URL.js
+const Backend_url = 'https://supporthelpdesk-server.adaptable.app';
+export default Backend_url;
