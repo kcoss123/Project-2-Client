@@ -1,0 +1,4 @@
+.add-new-ticket {
+  @apply max-w-md mx-auto;
+  @apply shadow-md;
+}

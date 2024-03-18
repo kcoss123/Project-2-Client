@@ -1,0 +1,11 @@
+.message-history {
+  @apply flex flex-row justify-between;
+}
+
+.message-history:nth-child(even) {
+  @apply flex-row-reverse;
+}
+
+.message {
+  @apply p-4 w-80 border border-gray-300 rounded;
+}
